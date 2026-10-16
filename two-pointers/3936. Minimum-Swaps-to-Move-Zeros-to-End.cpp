@@ -21,3 +21,23 @@ public:
         
     }
 };
+//Both have time and space complexity: O(n) and O(1) respectively
+//1st Approach swaps , but the second only counts the number of swaps
+
+class Solution {
+public:
+    int minimumSwaps(vector<int>& nums) {
+        int zeros=0;
+        for(int num: nums){
+            if(num==0) zeros++;
+        }
+        int swap=0;
+        for(int i=nums.size()-1; i>=0; i--){
+            if(zeros>0 && nums[i]!=0) {
+                swap++;
+                zeros--;
+            }else if(nums[i]==0) zeros--;
+        }
+        return swap;
+    }
+};
