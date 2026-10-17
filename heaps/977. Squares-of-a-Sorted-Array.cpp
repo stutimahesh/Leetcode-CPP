@@ -16,4 +16,4 @@ public:
     }
 };
 
-//Optimal Solution: [Two Pointers](../two-pointers/977.Squares-of-a-Sorted-Array.cpp)
+//Optimal Solution: [Two Pointers](../two-pointers/977. Squares-of-a-Sorted-Array.cpp)
